@@ -1,3 +1,8 @@
+You can just run this command, I googled after writing the script 😅.
+```bash
+find . -type d \( -name <directorytoexclude> -prune \) -o -print | sed -e "s/[^-][^\/]*\// |/g" -e "s/|\([^ ]\)/|-\1/" 
+```
+
 # Directory Visualizer
 
 CLI tool for saving the structure of a given directory into a file. Supports excluding specific subdirectories from being expanded.
